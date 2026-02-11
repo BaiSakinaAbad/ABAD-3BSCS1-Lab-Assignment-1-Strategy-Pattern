@@ -1,4 +1,8 @@
-public class Wizard implements Character{
+package character_types;
+import attacks.*;
+import defenses.*;
+
+public class Wizard implements Character {
      private AttackStrategy attackStrategy;
      private DefenseStrategy defenseStrategy;
 
@@ -17,7 +21,8 @@ public class Wizard implements Character{
     }
 
     @Override
-    public void setDefense(DefenseStrategy defenseStrategy) {
-       System.out.println("Wizard can only use magic barrier to defend!");
+    public void setDefense(Dodge defenseStrategy) {
+        System.out.println("Wizards can only use magic barrier to defend!");
     }
+
 }

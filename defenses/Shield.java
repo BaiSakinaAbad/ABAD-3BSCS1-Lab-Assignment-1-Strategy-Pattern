@@ -1,4 +1,6 @@
-public class Shield implements DefenseStrategy{
+package defenses;
+
+public class Shield extends Dodge implements DefenseStrategy {
 
     @Override
     public void defense() {

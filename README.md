@@ -3,13 +3,13 @@ This README is designed to be clean, professional, and ready for your GitHub rep
 
 ---
 
-# Strategy Pattern: Game Character System
+# Strategy Pattern: Game character_types.Character System
 
-A demonstration of the **Strategy Design Pattern** applied to a game character system. This implementation decouples the attack and defense behaviors from the `Character` class, allowing for dynamic behavior changes at runtime.
+A demonstration of the **Strategy Design Pattern** applied to a game character system. This implementation decouples the attack and defense behaviors from the `character_types.Character` class, allowing for dynamic behavior changes at runtime.
 
 ## Problem Scenario
 
-The original `Character` class used a monolithic approach with nested `if-else` statements to determine actions based on character type. This made the code:
+The original `character_types.Character` class used a monolithic approach with nested `if-else` statements to determine actions based on character type. This made the code:
 
 * **Rigid:** Adding a new character or behavior required modifying the core class.
 * **Hard to Maintain:** Logic for multiple behaviors (Sword, Spells, Shields) was tangled together.
@@ -18,21 +18,21 @@ The original `Character` class used a monolithic approach with nested `if-else` 
 ## Strategies
 Suppose we have three types of characters in a GameApp:
 
-    1. Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
-    2. Wizard: Casts spells; uses magic barrier to defend
-    3. Archer: Shoots arrows; uses dodge to defend
+    1. character_types.Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
+    2. character_types.Wizard: Casts spells; uses magic barrier to defend
+    3. character_types.Archer: Shoots arrows; uses dodge to defend
 
 Implement two types of Strategy:
-A.  DefenseStrategy
+A.  defenses.DefenseStrategy
 
-    1. Shield
-    2. Dodge
-    3. CreateMagic
+    1. defenses.Shield
+    2. defenses.Dodge
+    3. defenses.CreateMagic
 
-B.  AttackStrategy
+B.  attacks.AttackStrategy
 
-    1.  CastSpell
-    2.  ShootArrow
-    3.  SwingSword
+    1.  attacks.CastSpell
+    2.  attacks.ShootArrow
+    3.  attacks.SwingSword
 
 ## UML DIAGRAM

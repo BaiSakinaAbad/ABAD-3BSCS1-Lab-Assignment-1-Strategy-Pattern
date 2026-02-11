@@ -1,4 +1,8 @@
-public class Archer implements Character{
+package character_types;
+import attacks.*;
+import defenses.*;
+
+public class Archer implements Character {
    private DefenseStrategy defenseStrategy;
    private AttackStrategy attackStrategy;
 
@@ -17,7 +21,7 @@ public class Archer implements Character{
     }
 
     @Override
-    public void setDefense(DefenseStrategy defenseStrategy) {
-       System.out.println("Archer can only use dodge to defend!");
+    public void setDefense(Dodge defenseStrategy) {
+       System.out.println("Archers can only use dodge to defend!");
     }
 }

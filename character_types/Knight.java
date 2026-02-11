@@ -1,4 +1,8 @@
-public class Knight implements Character{
+package character_types;
+import attacks.*;
+import defenses.*;
+
+public class Knight implements Character {
 
     private DefenseStrategy defenseStrategy;
     private AttackStrategy attackStrategy;
@@ -18,7 +22,7 @@ public class Knight implements Character{
     }
 
     @Override
-    public void setDefense(DefenseStrategy defenseStrategy) {
+    public void setDefense(Dodge defenseStrategy) {
         this.defenseStrategy = defenseStrategy;
     }
 }

@@ -1,4 +1,6 @@
-public class SwingSword implements AttackStrategy{
+package attacks;
+
+public class SwingSword implements AttackStrategy {
     @Override
     public void attack(){
         System.out.println("I'm attacking by swinging sword!");

@@ -1,10 +1,16 @@
+import character_types.*;
+import attacks.*;
+import character_types.Character;
+import defenses.*;
+
+
 public class GameDemo {
     public static void main(String[] args) {
-        Character knight = new Knight();
-        Character archer = new Archer();
+        character_types.Character knight = new Knight();
+        character_types.Character archer = new Archer();
         Character wizard = new Wizard();
 
-        //  Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
+        //  character_types.Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
         System.out.println("KNIGHT");
         knight.doAttack();
         knight.doDefense();
@@ -13,18 +19,18 @@ public class GameDemo {
         knight.setDefense(new CreateMagic());
         knight.doDefense();
 
-        //Wizard: Casts spells; uses magic barrier to defend
+        //character_types.Wizard: Casts spells; uses magic barrier to defend
         System.out.println("\nWIZARD");
         wizard.doDefense();
         wizard.doAttack();
         wizard.setDefense(new Dodge());
         wizard.doDefense();
 
-        //. Archer: Shoots arrows; uses dodge to to defend
+        //. character_types.Archer: Shoots arrows; uses dodge to defend
         System.out.println("\nARCHER");
         archer.doAttack();
         archer.doDefense();
-        archer.setDefense(new CreateMagic());
+        archer.setDefense(new Shield());
         archer.doDefense();
     }
 }
