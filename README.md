@@ -17,6 +17,7 @@ The original `Character` class used a monolithic approach with nested `if-else` 
 
 ## Strategies
 Suppose we have three types of characters in a GameApp:
+
     1. Knight: Attacks with a sword; uses 3 strategies to defend (shield, dodge, magic barrier)
     2. Wizard: Casts spells; uses magic barrier to defend
     3. Archer: Shoots arrows; uses dodge to defend
