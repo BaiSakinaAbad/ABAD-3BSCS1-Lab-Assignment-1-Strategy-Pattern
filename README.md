@@ -36,3 +36,4 @@ B.  attacks.AttackStrategy
     3.  attacks.SwingSword
 
 ## UML DIAGRAM
+![strat_pattern.png](strat_pattern.png)
